@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Learning Hub</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Your styles here -->
+</head>
+
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+  <nav id="header">
+    <div class="nav-logo">
+        <p class="nav-name">DDU E-Learning</p>
+        <span>.</span>
+    </div>
+    <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+            <li class="nav_list">
+                <a href="#home" class="nav-link active-link">Home</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+                <a href="#courses" class="nav-link">Courses</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+                <a href="#about" class="nav-link">About</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#testimonials" class="nav-link active-link">Testimonials</a>
+              <div class="circle"></div>
+          </li>
+            <li class="nav_list">
+                <a href="#blog" class="nav-link">Blog</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list signup">
+                <a href="#signup" class="btn btn-primary">Sign Up</a>
+               
+            </li>
+            <li class="nav_list login">
+                <a href="#login" class="btn btn-secondary">Login</a>
+                
+            </li>
+        </ul>
+    </div>
+    <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+    </div>
+</nav>
+
+<!-- web intro -->
+ <div class="all-contents-container">
+<section id="home" class="hero fade-in">
+  <div class="container">
+    <h2 class="introduction">
+        Unlock Your Potential with Our Courses</h2>
+    <p>Join thousands of learners and boost your career today!<br> Enroll today and join a global network of professionals shaping the future.</p>
+    <div class="featured-name">
+        <p>Elevate Your Journey with <span class="typedText"></span></p>
+    </div>
+   <a href="#courses">
+<button href="#course" class="button" style="--clr: #7808d0">
+    <span class="button__icon-wrapper">
+      <svg
+        viewBox="0 0 14 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="button__icon-svg"
+        width="10"
+      >
+        <path
+          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+          fill="currentColor"
+        ></path>
+      </svg>
+  
+      <svg
+        viewBox="0 0 14 15"
+        fill="none"
+        width="10"
+        xmlns="http://www.w3.org/2000/svg"
+        class="button__icon-svg button__icon-svg--copy"
+      >
+        <path
+          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </span>
+    Explore All Courses
+  </button>
+</a>
+
+  </div>
+</section>
+
+<!-- Categories -->
+<section id="categories" class="categories-section fade-in">
+  <section class="card-section">
+    <a href="#courses">
+    <div class="card">
+      <div class="icon featured-text-card" style="background-color: #3ccfcf;">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/graduation-cap.png" alt="Program Icon">
+      </div>
+      <h2>Powerful Program</h2>
+      <p>Our programs are up-to-date with prevailing practices.</p>
+      <div class="arrow" style="background-color: #ff6b6b;">
+        <span>&rarr;</span>
+      </div>
+    </div>
+    </a>
+  <a href="#contact">
+    <div class="card">
+      <div class="icon featured-text-card" style="background-color: #f5a623;">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/customer-support.png" alt="Support Icon">
+      </div>
+      <h2>24/7 Support</h2>
+      <p>If you have any questions, you can contact our support.</p>
+      <div class="arrow" style="background-color: #f5a623;">
+        <span>&rarr;</span>
+      </div>
+    </div>
+  </a>
+  </section>
+
+  <div class="container featured-image">
+    <h2>Browse by Categories</h2>
+    <div class="categories-buttons">
+      <button class="btn btn-secondary category-btn " onclick="displayCourses('all')">See All</button>
+      <button class="btn btn-secondary category-btn " onclick="displayCourses('web development')">Web Development</button>
+      <button class="btn btn-secondary category-btn " onclick="displayCourses('graphics design')">Graphics Design</button>
+      <button class="btn btn-secondary category-btn " onclick="displayCourses('machine learning')">Machine Learning</button>
+      <button class="btn btn-secondary category-btn " onclick="displayCourses('digital marketing')">Digital Marketing</button>
+    </div>
+  </div>
+</section>
+
+<!-- Courses -->
+<section id="courses" class="section fade-in courses-section">
+  <div class="container courses-container">
+    <h2>Our Courses</h2>
+    <div class="course-list">
+
+    </div>
+  </div>
+</section>
+
+</section>
+<!-- About / Developers -->
+<section id="about" class="dev-section bg-light fade-in">
+  <div class="developed-by"><h2>About Us</h2></div>
+  <div class="developers about-info">
+    <div class="developer-discri-conta ">
+        <div class="image-container">
+            <img src="Aman.png" alt="Amanuel Shibabaw">
+            <div class="name-of-developer">
+              <p>Amanuel Shibabaw</p>
+          </div>
+        </div>
+        <div class="role-of-developer">
+            FullStack Developer
+        </div>
+        <div class="developer-social-icons">
+          <div class=" dev-icons"><i class="uil uil-instagram"></i></div>
+          <div class=" dev-icons"><i class="uil uil-linkedin-alt"></i></div>
+          <div class=" dev-icons"><i class="uil uil-twitter"></i></div>
+          <div class=" dev-icons"><a href="https://github.com/AmanuelShibabaw"><i class="uil uil-github-alt"></i></a></div>
+      </div>
+    </div>
+    <div class="developer-discri-conta">
+      <div class="image-container">
+          <img src="eyob.png" alt="Eyob Tesfaye">
+          <div class="name-of-developer">
+            <p>Eyob Tesfaye</p>
+        </div>
+      </div>
+      <div class="role-of-developer">
+          FullStack Developer
+      </div>
+      <div class="developer-social-icons">
+        <div class=" dev-icons"><i class="uil uil-instagram"></i></div>
+        <div class=" dev-icons"><i class="uil uil-linkedin-alt"></i></div>
+        <div class=" dev-icons"><i class="uil uil-twitter"></i></div>
+        <div class=" dev-icons"><i class="uil uil-github-alt"></i></div>
+    </div>
+  </div>
+  <div class="developer-discri-conta">
+    <div class="image-container">
+        <img src="image.png" alt="Eyob ">
+        <div class="name-of-developer">
+          <p>Eyob </p>
+      </div>
+    </div>
+    <div class="role-of-developer">
+        FullStack Developer
+    </div>
+    <div class="developer-social-icons">
+      <div class=" dev-icons"><i class="uil uil-instagram"></i></div>
+      <div class=" dev-icons"><i class="uil uil-linkedin-alt"></i></div>
+      <div class=" dev-icons"><i class="uil uil-twitter"></i></div>
+      <div class=" dev-icons"><i class="uil uil-github-alt"></i></div>
+  </div>
+</div>
+<div class="developer-discri-conta">
+  <div class="image-container">
+      <img src="image.png" alt="Gietabalew">
+      <div class="name-of-developer">
+        <p>Gietabalew</p>
+    </div>
+  </div>
+  <div class="role-of-developer">
+      FullStack Developer
+  </div>
+  <div class="developer-social-icons">
+    <div class=" dev-icons"><i class="uil uil-instagram"></i></div>
+    <div class=" dev-icons"><i class="uil uil-linkedin-alt"></i></div>
+    <div class=" dev-icons"><i class="uil uil-twitter"></i></div>
+    <div class=" dev-icons"><i class="uil uil-github-alt"></i></div>
+</div>
+</div>
+<div class="developer-discri-conta">
+  <div class="image-container">
+      <img src="image.png" alt="Lidya">
+      <div class="name-of-developer">
+        <p>Lidya</p>
+    </div>
+  </div>
+  <div class="role-of-developer">
+      FullStack Developer
+  </div>
+  <div class="developer-social-icons">
+    <div class=" dev-icons"><i class="uil uil-instagram"></i></div>
+    <div class=" dev-icons"><i class="uil uil-linkedin-alt"></i></div>
+    <div class=" dev-icons"><i class="uil uil-twitter"></i></div>
+    <div class=" dev-icons"><i class="uil uil-github-alt"></i></div>
+</div>
+</div>
+
+    
+</div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="section fade-in">
+  <div class="container">
+    <h2>Student Testimonials</h2>
+    <div class="testimonials">
+
+      <div class="testimonial-card fade-in">
+        <p>"Amazing platform, helped me land my dream job!"</p>
+        <h4>- Sarah Brown</h4>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <p>"The courses are structured and easy to follow!"</p>
+        <h4>- David Wilson</h4>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <p>"Top instructors and great content quality."</p>
+        <h4>- Amy Garcia</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="section bg-light fade-in">
+    <div class="container">
+      <h2>Our Blog</h2>
+      <div class="blogs">
+  
+        <a href="#blog1" class="blog-post fade-in">
+          <h3>Top 5 Skills to Learn in 2024</h3>
+          <p>Stay ahead by mastering these skills.</p>
+        </a>
+  
+        <a href="#blog2" class="blog-post fade-in">
+          <h3>Why Online Learning is the Future</h3>
+          <p>Discover how e-learning is reshaping education.</p>
+        </a>
+  
+        <a href="#blog3" class="blog-post fade-in">
+          <h3>How to Stay Motivated While Learning Online</h3>
+          <p>Simple tips to stay productive and focused.</p>
+        </a>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Contact -->
+ <div class="cont">
+<section class="contact-section" id="contact">
+    <div class="top-header">
+        <h1>Get in touch</h1>
+        <span>Do you have a project in your mind, contact me here</span>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p><i class="uil uil-envelope"></i> Email: ethiotech@gmail.com</p>
+                <p><i class="uil uil-phone"></i> +251976032480</p>
+            </div>
+        </div>
+        <div class="col message">
+            <div class="form-control">
+                <div class="form-inputs">
+                    <input type="text" class="input-field" placeholder="Name">
+                    <input type="text" class="input-field" placeholder="Email">
+                </div>
+                <div class="text-area">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="form-button">
+                    <button class="btn-shine"><span class="">Send </span><i class="uil uil-message"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<footer>
+    <div class="top-footer">
+      <div class="scroll-icon-box">
+        <a href="#home" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <div class="scroll-top">Scroll Top</div>
+        </a>
+    </div>
+        <p>DDU E-LEARNING HUB</p>
+    </div>
+    <div class="middle-footer">
+        <ul class="footer-menu">
+            <li class="footer_menu_list">
+                <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+                <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+                <a href="#blog">Blog</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#testimonials">Testimonials</a>
+          </li>
+            <li class="footer_menu_list">
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#courses">Courses</a>
+          </li>
+        </ul>
+    </div>
+    <div class="footer-social-icons">
+        <div class="icon"><i class="uil uil-instagram"></i></div>
+        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+        <div class="icon"><i class="uil uil-twitter"></i></div>
+        <div class="icon"><i class="uil uil-github-alt"></i></div>
+        <div class="icon"><i class="fab fa-facebook"></i></div>
+    </div>
+    <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Amanuel Shibabaw</a> - All rights reserved
+        </p>
+    </div>
+</footer>
+</div>
+<!-- Scripts -->
+ <!-- type madregiya-->
+ <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <script src="script.js"></script>
+</body>
+</html>
